@@ -70,9 +70,6 @@ void buzzer_enable(){
 /*************Ultra sonic & Buzzer *************/
 
 
-
-
-
 /*************Expressions*************/
 void expression(){
     LCD_setScreen(BLACK);
@@ -82,50 +79,28 @@ void expression(){
 }
 
 void Face_Stand(void) {
-    LCD_setScreen(BLACK); // ??
-    
-    // ??? (??????)
-    // ??
+    LCD_setScreen(BLACK); 
     LCD_drawCircle(45, 50, 18, GREEN); 
-    // ??
     LCD_drawCircle(115, 50, 18, GREEN);
-    
-    // ??? (????)
     LCD_drawLine(60, 90, 100, 90, GREEN);
-    
-    // ????
-    LCD_drawString(60, 110, "READY", WHITE, BLACK); //
+    LCD_drawString(60, 110, "READY", WHITE, BLACK); 
 }
 
 void Face_Sit(void) {
     LCD_setScreen(BLACK);
-    
-    // ??? (??????)
-    // ???
     LCD_drawLine(25, 50, 65, 50, YELLOW);
-    // ???
     LCD_drawLine(95, 50, 135, 50, YELLOW);
-    
-    // ??? (???)
     LCD_drawCircle(80, 90, 8, YELLOW);
-    
     LCD_drawString(65, 110, "REST", WHITE, BLACK);
 }
 
 void Face_Forward(void) {
     LCD_setScreen(BLACK);
-    
-    // ???? (??)
     LCD_drawCircle(45, 50, 20, CYAN);
     LCD_drawCircle(115, 50, 20, CYAN);
-    
-    // ??? (?Block?????????/???)
     LCD_drawBlock(40, 45, 50, 55, CYAN); 
     LCD_drawBlock(110, 45, 120, 55, CYAN);
-    
-    // ???? (????)
     LCD_drawBlock(60, 85, 100, 95, CYAN);
-    
     LCD_drawString(65, 110, "GO >>", WHITE, BLACK);
 }
 
@@ -133,36 +108,29 @@ void Face_Backward(void) {
     LCD_setScreen(BLACK);
     
     uint16_t color = RED;
-    
-    // ?? (?? X)
     LCD_drawLine(30, 35, 60, 65, color);
     LCD_drawLine(30, 65, 60, 35, color);
-    
-    // ?? (?? X)
     LCD_drawLine(100, 35, 130, 65, color);
     LCD_drawLine(100, 65, 130, 35, color);
-    
-    // ?? (??? O)
     LCD_drawCircle(80, 95, 12, color);
-    
     LCD_drawString(55, 110, "<< BACK", WHITE, BLACK);
 }
 
 /*************Expressions*************/
 
 volatile uint8_t us_send_counter = 0; 
-#define US_SEND_INTERVAL 100 // 1秒发送一次 (100 * 10ms)
+#define US_SEND_INTERVAL 100 // (100 * 10ms)--1s for ultrasonic sensor
 volatile uint8_t motion_ready = 0;
 
 void timer2_init(void) {
-    // F_CPU=16MHz, Prescaler=256, OCR2A=624 => 10ms 周期
+    //Prescaler=256, OCR2A=624 T=10ms
     TCCR2A = (1 << WGM21); // CTC Mode
     OCR2A = 624; 
     TCCR2B = (1 << CS22); // Prescaler /256
     TIMSK2 = (1 << OCIE2A); // Enable Output Compare A interrupt
 }
 
-// TIMER 2 中断服务程序：ISR 中只做标记和计时
+// TIMER 2 ISR
 ISR(TIMER2_COMPA_vect) {
 motion_ready = 1;
     if (us_send_counter > 0) {
@@ -184,47 +152,32 @@ void PCINT_init(){
 void PCINT_control(){
         if(PIND & (1<<PD2)){
         pcint_trig = 0;
-//                LCD_setScreen(BLACK);
-//    //LCD_drawCircle(120, 35,20, WHITE);
-//    LCD_drawCircle(120, 95,20, WHITE);
-//    LCD_drawhalfCircle(60,65,20,WHITE);
         Face_Stand();
         motion_set_mode(MOTION_MODE_STAND);
-        //motion_stand();
         
     }
         if(PIND & (1<<PD3)){
             
         pcint_trig = 0;
-//                 LCD_setScreen(BLACK);
-//    LCD_drawCircle(120, 35,20, WHITE);
-//    LCD_drawCircle(120, 95,20, WHITE);
-//    LCD_drawhalfCircle(60,65,20,WHITE);
         Face_Sit();
         motion_set_mode(MOTION_MODE_PRONE);
-       // motion_prone();
+
     }
         if(PIND & (1<<PD4)){
             
         pcint_trig =0;
-//                LCD_setScreen(BLACK);
-//    LCD_drawCircle(120, 35,20, WHITE);
-//    //LCD_drawCircle(120, 95,20, WHITE);
-//    LCD_drawhalfCircle(60,65,20,WHITE);
+
         Face_Forward();
         motion_set_mode(MOTION_MODE_WALK_FWD);
-       // motion_forward_ms(2000);
+
     }
         if(PIND & (1<<PD5)){
             
         pcint_trig =0;
-//                 LCD_setScreen(BLACK);
-//    LCD_drawCircle(120, 35,20, WHITE);
-//    LCD_drawCircle(120, 95,20, WHITE);
-//    LCD_drawhalfCircle(20,65,20,WHITE);
+
         Face_Backward();
         motion_set_mode(MOTION_MODE_WALK_BACK);
-        //motion_backward_ms(2000);
+
     }
 }
 
@@ -237,7 +190,7 @@ ISR(PCINT2_vect){
 int main(){
     lcd_init();
     expression();
-//    /*ultrasonic & buzzer &LCD*/
+//    /*ultrasonic & buzzer & LCD*/
     gpio_init();  // trig+echo+buzzer
     timer3_init();  // for edge capture
 //    lcd_init();     //lcd
@@ -273,19 +226,19 @@ int main(){
             motion_update(10);
             //_delay_ms(5);
          if (us_send_counter == 0) {
-                // 触发超声波发送
-                TCCR3B &= ~(1 << ICES3); // 先清除边沿选择
-                TCCR3B |= (1 << ICES3);  // 强制设置为上升沿捕获 (Rising Edge)
-                TIFR3 |= (1 << ICF3);    // 清除可能残留的中断标志位 (Clear Flag)
+                // ultrasoni
+                TCCR3B &= ~(1 << ICES3); // 
+                TCCR3B |= (1 << ICES3);  // Rising Edge
+                TIFR3 |= (1 << ICF3);    // Clear Flag
                 captured = 0; 
                 send_trig(); 
                 us_send_counter = US_SEND_INTERVAL; 
             }
             if (buzzer_duration_ms > 0) {
         buzzer_duration_ms -= 10;
-        PORTC ^= (1 << PC3); // 产生蜂鸣器频率 (简单的方波)
+        PORTC ^= (1 << PC3); // Buzzer
     } else {
-        PORTC &= ~(1 << PC3); // 鸣叫时间到，关闭蜂鸣器
+        PORTC &= ~(1 << PC3); 
     }
         }
         /*remote control*/
@@ -298,7 +251,7 @@ int main(){
         imuReadAccel(&ax, &ay, &az);
         //  printf("START!!");
 
-        // Convert to g units (?2g mode: 0.061 mg/LSB)
+        // Convert to g units 
         float axg = ax * 0.000061;
         float ayg = ay * 0.000061;
         float azg = az * 0.000061;
@@ -308,23 +261,11 @@ int main(){
         //_delay_ms(200);
 
         /*ultrasonic & buzzer*/
-//        captured = 0;
-//        send_trig();// send trig
-//
-//        while (captured < 2); // wait until capture all
-//
-//        unsigned int lenghth = end_ticks - start_ticks;
-//        float distance_cm = lenghth * 0.5 / 58 ; // Formula: uS / 58 = centimeters
-//        if(distance_cm < 30){
-//            buzzer_enable();
-//            
-//            //motion_stand(); wait for confirm
-//        }
-//        _delay_ms(50);
+
        
         if (captured == 2) {
             unsigned int length = end_ticks - start_ticks;
-            // 使用浮点数计算距离
+            
             float distance_cm = length * 0.5f / 58.0f; 
 
             if (distance_cm < 20.0f) {
@@ -332,9 +273,8 @@ int main(){
                 motion_set_mode(MOTION_MODE_STAND);
 
             }
-            // 不需要在这里 reset captured，下次 send_trig 会处理
+
         }
-        //motion_update(10);
-        //_delay_ms(10);   
+
 }
 }
