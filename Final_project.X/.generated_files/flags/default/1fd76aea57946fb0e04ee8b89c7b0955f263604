@@ -1,0 +1,5 @@
+<<<<<<<< HEAD:Final_project.X/.generated_files/flags/default/1fd76aea57946fb0e04ee8b89c7b0955f263604
+ $(MP_EXTRA_CC_PRE) -mcpu=$(MP_PROCESSOR_OPTION) -c  -x c -D__$(MP_PROCESSOR_OPTION)__   -mdfp="${DFP_DIR}/xc8"  -Wl,--gc-sections -O1 -ffunction-sections -fdata-sections -fshort-enums -fno-common -funsigned-char -funsigned-bitfields -Wall -DXPRJ_default=$(CND_CONF)  $(COMPARISON_BUILD)  -gdwarf-3 -mno-const-data-in-progmem    F:\ÁôÑ§\±ö´ó\25Fall\ESE 5190\Final\final-project-f25-f25-final_project-g_square\Final_project.X\imu.c
+========
+ $(MP_EXTRA_CC_PRE) -mcpu=$(MP_PROCESSOR_OPTION) -c  -x c -D__$(MP_PROCESSOR_OPTION)__   -mdfp="${DFP_DIR}/xc8"  -Wl,--gc-sections -O1 -ffunction-sections -fdata-sections -fshort-enums -fno-common -funsigned-char -funsigned-bitfields -Wall -DXPRJ_default=$(CND_CONF)  $(COMPARISON_BUILD)  -gdwarf-3 -mno-const-data-in-progmem    C:\Users\SHUIYUE\MPLABXProjects\Final_project.X\imu.c
+>>>>>>>> 0f3edfdbe2e9e0ffbe7581811c670e4ec3bdcd6e:1.X/.generated_files/flags/default/2140622a163a58f189892da59695cc88765c9d9c

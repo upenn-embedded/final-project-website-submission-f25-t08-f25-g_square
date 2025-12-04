@@ -1,0 +1,5 @@
+<<<<<<<< HEAD:Final_project.X/.generated_files/flags/default/122d0cd039f24cfc3a08ebc4395e8a929b48cf9a
+ $(MP_EXTRA_CC_PRE) -mcpu=$(MP_PROCESSOR_OPTION) -c  -D__DEBUG=1 -g -DDEBUG  -gdwarf-2  -x c -D__$(MP_PROCESSOR_OPTION)__   -mdfp="${DFP_DIR}/xc8"  -Wl,--gc-sections -O1 -ffunction-sections -fdata-sections -fshort-enums -fno-common -funsigned-char -funsigned-bitfields -Wall -DXPRJ_default=$(CND_CONF)  $(COMPARISON_BUILD)  -gdwarf-3 -mno-const-data-in-progmem    F:\ÁôÑ§\±ö´ó\25Fall\ESE 5190\Final\final-project-f25-f25-final_project-g_square\Final_project.X\ST7735.c
+========
+ $(MP_EXTRA_CC_PRE) -mcpu=$(MP_PROCESSOR_OPTION) -c  -D__DEBUG=1 -g -DDEBUG  -gdwarf-2  -x c -D__$(MP_PROCESSOR_OPTION)__   -mdfp="${DFP_DIR}/xc8"  -Wl,--gc-sections -O1 -ffunction-sections -fdata-sections -fshort-enums -fno-common -funsigned-char -funsigned-bitfields -Wall -DXPRJ_default=$(CND_CONF)  $(COMPARISON_BUILD)  -gdwarf-3 -mno-const-data-in-progmem    C:\Users\SHUIYUE\MPLABXProjects\pwm111.X\pca9685.c
+>>>>>>>> 0f3edfdbe2e9e0ffbe7581811c670e4ec3bdcd6e:pwm111.X/.generated_files/flags/default/361ff6b137e938cb75aec2fbe85e629b3196bb4b
