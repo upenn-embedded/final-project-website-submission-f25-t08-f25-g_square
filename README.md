@@ -12,7 +12,7 @@
 | [Shengge Guan]   | [shengge@seas.upenn.edu]  |
 | [Haoliang Xie]   | [liang027@seas.upenn.edu] |
 
-**GitHub Repository URL:https://github.com/upenn-embedded/final-project-f25-f25-final_project-g_square.git**
+**GitHub Repository URL:https://github.com/upenn-embedded/final-project-website-submission-f25-t08-f25-g_square.git**
 
 **GitHub Pages Website URL:** [for final submission]*
 
