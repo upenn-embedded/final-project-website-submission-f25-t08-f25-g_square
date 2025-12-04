@@ -5,6 +5,11 @@
  * Created on November 15, 2025, 4:55 PM
  */
 
+ /*
+  * Microphone+ADC 
+  * not used in this project at all
+  * because the integration is hard.
+ */
 
 #include "voice_control.h"
 #include "motion.h"

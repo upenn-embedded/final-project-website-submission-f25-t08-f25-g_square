@@ -17,25 +17,25 @@
 
 char auth[] = BLYNK_AUTH_TOKEN;
 
-/**************  Blynk 相关 GPIO  **************/
+/**************  Blynk -- GPIO  **************/
 // V0 -> IO11, V1 -> IO10, V2 -> IO7, V3 -> IO3
 const int PIN_V0 = 11;
 const int PIN_V1 = 10;
 const int PIN_V2 = 7;
 const int PIN_V3 = 3;
 
-/**************  ATmega FALL 输入信号  **************/
+/**************  ATmega FALL input port  **************/
 #define ATMEGA_SIGNAL_PIN 5   
 
 bool fallNotifiedRecently = false;
 unsigned long lastFallTime = 0;
-const unsigned long FALL_COOLDOWN_MS = 10000;   // 10 秒冷却时间
+const unsigned long FALL_COOLDOWN_MS = 10000;   // 10s for updation
 
-/**************  I2S 麦克风相关  **************/
-// 使用 I2S0
+/**************  I2S   **************/
+
 #define I2S_PORT       I2S_NUM_0
 
-// 接线（按你的实际板子改）
+
 #define PIN_I2S_BCLK   17      // SPH0645 BCLK -> GPIO17
 #define PIN_I2S_LRCL   18      // SPH0645 LRCL/WS -> GPIO18
 #define PIN_I2S_DOUT   14      // SPH0645 DOUT -> GPIO14
@@ -43,10 +43,10 @@ const unsigned long FALL_COOLDOWN_MS = 10000;   // 10 秒冷却时间
 const int BUFFER_LEN = 256;
 int32_t i2sBuffer[BUFFER_LEN];
 
-// 防抖（单次敲击）
+// debouncing
 unsigned long lastBeatMs = 0;
 
-// 噪声基线（用峰值的平滑值）
+// noisefloor
 float noiseFloor = 0.0f;
 
 // 声音计数与激活窗口
