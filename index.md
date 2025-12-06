@@ -53,10 +53,10 @@ title: e-Puppy — Your Everyday Companion
 | ID     | Description                                                                                               | Validation Outcome                                                                          |
 | ------ | --------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------- |
 | SRS-01 | The mirophone module will continuously listen for the claps and identify the numvber, then send recognized data to the ATmega328PB . The command will be verified against the stored command set, and corresponding actions will be triggered immediately. | Confirmed, logged output from the MCU is saved to "validation" folder in GitHub repository. |
-| SRS-02 | The ultrasonic sensor will measure the distance in front of the robot every 1s and send the data to the ATmega328PB. If an obstacle is detected within 20 cm, the robot will automatically stop movement and trigger the buzzle to emit a warningsignal.| |
-| SRS-03 | The LCD display will update every second to show an expressive facial animation corresponding to the robot’s current action. Each motion command (such as "sit", "walk" and "stop") will trigger a unique facial expression, allowing the robot to visually convey its behavior and enhance user interaction.||
-| SRS-04 | The ESP32 module will transmit system telemetry (command, motion state and obstacle data) to the Blynk IoT platform, allowing remote monitoring and basic control through the mobile app.| |
-| SRS-05 | The IMU module shall continuously measure and fuse 3-axis acceleration, which must be sent to the ATmega328PB through I2C for motion stabilization. If either angle exceeds the warning number, an immediate Emergency Stop command will be triggered.||
+| SRS-02 | The ultrasonic sensor will measure the distance in front of the robot every 1s and send the data to the ATmega328PB. If an obstacle is detected within 20 cm, the robot will automatically stop movement and trigger the buzzle to emit a warningsignal.|Pending |
+| SRS-03 | The LCD display will update every second to show an expressive facial animation corresponding to the robot’s current action. Each motion command (such as "sit", "walk" and "stop") will trigger a unique facial expression, allowing the robot to visually convey its behavior and enhance user interaction.|pending|
+| SRS-04 | The ESP32 module will transmit system telemetry (command, motion state and obstacle data) to the Blynk IoT platform, allowing remote monitoring and basic control through the mobile app.| pending|
+| SRS-05 | The IMU module shall continuously measure and fuse 3-axis acceleration, which must be sent to the ATmega328PB through I2C for motion stabilization. If either angle exceeds the warning number, an immediate Emergency Stop command will be triggered.|pending|
 #### 4.2 Hardware Requirements Specification (HRS) Results
 
 *Based on your quantified system performance, comment on how you achieved or fell short of your expected requirements.*
@@ -68,11 +68,11 @@ title: e-Puppy — Your Everyday Companion
 | ID     | Description                                                                                                                        | Validation Outcome                                                                                                      |
 | ------ | ---------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------- |
 | HRS-01 | The ESP32 would measure the number of the claps through a microphone and send data to the microcontroller. Recognized numbers shall trigger corresponding physical actions such as "sit", "walk" and "stop" | Confirmed, sensed obstacles up to 15cm. Video in "validation" folder, shows tape measure and logged output to terminal. |
-| HRS-02 | Four servo motors shall be used to perform limb movements. The servos shall receive PWM control signals from the microcontroller and operate smoothly with position accuracy within ±2°. ||
-| HRS-03 | An ultrasonic sensor shall measure the distance to obstacles in front of the robot. If an object is detected within 15 cm, the system shall stop motion and activate the buzzer and LED indicators for warning.||
-| HRS-04 | An ESP32 module shall provide IoT connectivity through the Blynk platform, allowing remote monitoring and simple control via a mobile application.||
-| HRS-05 | A LCD display shall show expressive facial animations corresponding to the current action, providing visual feedback to the user.||
-| HRS-06 | An IMU sensor shall be integrated to measure 3-axis acceleration. This module shall communicate with the microcontroller via the I2C bus and must be capable of providing raw data to support real-time motion stabilization.||
+| HRS-02 | Four servo motors shall be used to perform limb movements. The servos shall receive PWM control signals from the microcontroller and operate smoothly with position accuracy within ±2°. |pending|
+| HRS-03 | An ultrasonic sensor shall measure the distance to obstacles in front of the robot. If an object is detected within 15 cm, the system shall stop motion and activate the buzzer and LED indicators for warning.|pending|
+| HRS-04 | An ESP32 module shall provide IoT connectivity through the Blynk platform, allowing remote monitoring and simple control via a mobile application.|pending|
+| HRS-05 | A LCD display shall show expressive facial animations corresponding to the current action, providing visual feedback to the user.|pending|
+| HRS-06 | An IMU sensor shall be integrated to measure 3-axis acceleration. This module shall communicate with the microcontroller via the I2C bus and must be capable of providing raw data to support real-time motion stabilization.|pending|
 ### 5. Conclusion
 
 Reflect on your project. Some questions to address:
