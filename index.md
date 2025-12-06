@@ -73,8 +73,6 @@ Reflect on your project. Some questions to address:
 * Did you encounter obstacles that you didn’t anticipate?
 * What could be a next step for this project?
 
-<h2>5. Conclusion</h2>
-
 <div style="border:1px solid #ddd; border-radius:10px; padding:20px; margin-bottom:20px; background:#fafafa;">
   <h3>Yubin</h3>
   <p>
