@@ -21,8 +21,6 @@ title: e-Puppy — Your Everyday Companion
   </div>
 </div>
 
----
-
 ## Final Project Report
 
 
