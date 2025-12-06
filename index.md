@@ -52,8 +52,11 @@ title: e-Puppy — Your Everyday Companion
 
 | ID     | Description                                                                                               | Validation Outcome                                                                          |
 | ------ | --------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------- |
-| SRS-01 | The IMU 3-axis acceleration will be measured with 16-bit depth every 100 milliseconds +/-10 milliseconds. | Confirmed, logged output from the MCU is saved to "validation" folder in GitHub repository. |
-
+| SRS-01 | The mirophone module will continuously listen for the claps and identify the numvber, then send recognized data to the ATmega328PB . The command will be verified against the stored command set, and corresponding actions will be triggered immediately. | Confirmed, logged output from the MCU is saved to "validation" folder in GitHub repository. |
+| SRS-02 | The ultrasonic sensor will measure the distance in front of the robot every 1s and send the data to the ATmega328PB. If an obstacle is detected within 20 cm, the robot will automatically stop movement and trigger the buzzle to emit a warningsignal.| |
+| SRS-03 | The LCD display will update every second to show an expressive facial animation corresponding to the robot’s current action. Each motion command (such as "sit", "walk" and "stop") will trigger a unique facial expression, allowing the robot to visually convey its behavior and enhance user interaction.||
+| SRS-04 | The ESP32 module will transmit system telemetry (command, motion state and obstacle data) to the Blynk IoT platform, allowing remote monitoring and basic control through the mobile app.| |
+| SRS-05 | The IMU module shall continuously measure and fuse 3-axis acceleration, which must be sent to the ATmega328PB through I2C for motion stabilization. If either angle exceeds the warning number, an immediate Emergency Stop command will be triggered.||
 #### 4.2 Hardware Requirements Specification (HRS) Results
 
 *Based on your quantified system performance, comment on how you achieved or fell short of your expected requirements.*
