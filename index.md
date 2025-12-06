@@ -29,33 +29,32 @@ title: e-Puppy — Your Everyday Companion
 * Ensure your video link is accessible to the teaching team. Unlisted YouTube videos or Google Drive uploads with SEAS account access work well.
 * Points will be removed if the audio quality is poor - say, if you filmed your video in a noisy electrical engineering lab.
 
-### 2. Images
+### 2. 📸 Images
 
-## 📸 Project Images
+<div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(220px,1fr)); gap:16px;">
 
-<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 16px;">
-
-  <a href="whole.jpg" target="_blank">
-    <img src="whole.jpg" alt="Full View" style="width:100%; border-radius:8px;">
+  <a href="https://upenn-embedded.github.io/final-project-website-submission-f25-t08-f25-g_square/whole.jpg" target="_blank">
+    <img src="https://upenn-embedded.github.io/final-project-website-submission-f25-t08-f25-g_square/whole.jpg" style="width:100%; border-radius:8px;">
   </a>
 
-  <a href="front_view.jpg" target="_blank">
-    <img src="front_view.jpg" alt="Front View" style="width:100%; border-radius:8px;">
+  <a href="https://upenn-embedded.github.io/final-project-website-submission-f25-t08-f25-g_square/front_view.jpg" target="_blank">
+    <img src="https://upenn-embedded.github.io/final-project-website-submission-f25-t08-f25-g_square/front_view.jpg" style="width:100%; border-radius:8px;">
   </a>
 
-  <a href="side_view.jpg" target="_blank">
-    <img src="side_view.jpg" alt="Side View" style="width:100%; border-radius:8px;">
+  <a href="https://upenn-embedded.github.io/final-project-website-submission-f25-t08-f25-g_square/side_view.jpg" target="_blank">
+    <img src="https://upenn-embedded.github.io/final-project-website-submission-f25-t08-f25-g_square/side_view.jpg" style="width:100%; border-radius:8px;">
   </a>
 
-  <a href="back_view.jpg" target="_blank">
-    <img src="back_view.jpg" alt="Back View" style="width:100%; border-radius:8px;">
+  <a href="https://upenn-embedded.github.io/final-project-website-submission-f25-t08-f25-g_square/back_view.jpg" target="_blank">
+    <img src="https://upenn-embedded.github.io/final-project-website-submission-f25-t08-f25-g_square/back_view.jpg" style="width:100%; border-radius:8px;">
   </a>
 
-  <a href="interior.jpg" target="_blank">
-    <img src="interior.jpg" alt="Interior View" style="width:100%; border-radius:8px;">
+  <a href="https://upenn-embedded.github.io/final-project-website-submission-f25-t08-f25-g_square/interior.jpg" target="_blank">
+    <img src="https://upenn-embedded.github.io/final-project-website-submission-f25-t08-f25-g_square/interior.jpg" style="width:100%; border-radius:8px;">
   </a>
 
 </div>
+
 
 
 
