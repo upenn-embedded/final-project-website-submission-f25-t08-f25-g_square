@@ -1,13 +1,13 @@
-<div style="display:flex; justify-content:center; margin: 24px 0;">
-  <img src="https://upenn-embedded.github.io/final-project-website-submission-f25-t08-f25-g_square/epuppy_400x400.png"
-       alt="e-Puppy"
-       style="width:400px; height:400px; object-fit:cover; border-radius:16px;">
-</div>
 
 ---
 layout: default
 title: e-Puppy — Your Everyday Companion
 ---
+<div style="display:flex; justify-content:center; margin: 24px 0;">
+  <img src="https://upenn-embedded.github.io/final-project-website-submission-f25-t08-f25-g_square/epuppy_400x400.png"
+       alt="e-Puppy"
+       style="width:400px; height:400px; object-fit:cover; border-radius:16px;">
+</div>
 
 <div style="text-align:center; margin-top:60px; margin-bottom:40px;">
   <h1 style="font-size:3rem; font-weight:600; letter-spacing:1.5px; margin-bottom:10px;">
@@ -17,7 +17,7 @@ title: e-Puppy — Your Everyday Companion
     Your Everyday Companion
   </div>
   <div style="margin-top:12px; font-size:1rem; color:#777;">
-    Developed by <strong>Team G Square</strong>
+    Developed by <strong>Team G Square-Yubin Guan, Haoliang Xie, Shengge Guan</strong>
   </div>
 </div>
 
