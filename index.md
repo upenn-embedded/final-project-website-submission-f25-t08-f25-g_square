@@ -63,55 +63,28 @@ title: e-Puppy — Your Everyday Companion
 
 ### 4. Results
 
-*What were your results? Namely, what was the final solution/design to your problem?*
-
 #### 4.1 Software Requirements Specification (SRS) Results
-
-*Based on your quantified system performance, comment on how you achieved or fell short of your expected requirements.*
-
-*Did your requirements change? If so, why? Failing to meet a requirement is acceptable; understanding the reason why is critical!*
-
-
-Validate at least two requirements, showing how you tested and your proof of work (videos, images, logic analyzer/oscilloscope captures, etc.).
 
 | ID     | Description | Validation Outcome |
 |--------|-------------|-------------------|
-| SRS-01 | The microphone module will continuously listen for claps and identify the number, then send recognized data to the ATmega328PB. The command will be verified against the stored command set and corresponding actions will be triggered immediately. | Confirmed. |
-| SRS-02 | The ultrasonic sensor measures the distance every 1 s. If an obstacle is detected within 20 cm, the robot stops movement and triggers the buzzer to emit a warning signal. | Confirmed via live testing and video evidence. |
-| SRS-03 | The LCD display updates every second to show facial emotions corresponding to the robot’s current action (e.g., sit, walk, stop). | Confirmed through visual inspection and recorded images. |
-| SRS-04 | The ESP32 transmits system command to the Blynk IoT platform for remote control. | Confirmed via Blynk dashboard screenshots. |
-| SRS-05 | The IMU continuously measures 3-axis acceleration and sends data to the ATmega328PB via I2C. An emergency stop is triggered if the warning threshold is exceeded. | Confirmed through induced tilt tests and logged IMU values. |
+| SRS-01 | The microphone module will continuously listen for claps and identify the number, then send recognized data to the ATmega328PB. The command will be verified against the stored command set and corresponding actions will be triggered immediately. | Confirmed via live testing and [video evidence](https://drive.google.com/file/d/14UPAd-8kFQAw4NirMjw4hy5HUUOzlmQn/view?usp=share_link). |
+| SRS-02 | The ultrasonic sensor measures the distance every 1 s. If an obstacle is detected within 20 cm, the robot stops movement and triggers the buzzer to emit a warning signal. | Confirmed via live testing and [video evidence](https://drive.google.com/file/d/1dD9kHc6z8SWlcGxx0egVHsm26H7kbpge/view?usp=share_link). |
+| SRS-03 | The LCD display updates every second to show facial emotions corresponding to the robot’s current action (e.g., sit, walk, stop). | Confirmed via live testing and [video evidence](https://drive.google.com/file/d/14UPAd-8kFQAw4NirMjw4hy5HUUOzlmQn/view?usp=share_link). |
+| SRS-04 | The ESP32 transmits system command to the Blynk IoT platform for remote control. | Confirmed via live testing and [video evidence](https://drive.google.com/file/d/1LEdqjWzvrj9qv65okmgKJJLJmY1vXym9/view?usp=share_link) |
+| SRS-05 | The IMU continuously measures 3-axis acceleration and sends data to the ATmega328PB via I2C. An emergency stop is triggered if the warning threshold is exceeded. | Confirmed via [video evidence](https://drive.google.com/file/d/1asGX6gRP8TG-OgkCPrwq0DiNiOpHG6Pe/view?usp=share_link) and serial output. |
 
 #### 4.2 Hardware Requirements Specification (HRS) Results
 
-*Based on your quantified system performance, comment on how you achieved or fell short of your expected requirements.*
-
-*Did your requirements change? If so, why? Failing to meet a requirement is acceptable; understanding the reason why is critical!*
-
-*Validate at least two requirements, showing how you tested and your proof of work
-(videos, images, logic analyzer/oscilloscope captures, etc.).*
-
 | ID     | Description | Validation Outcome |
 |--------|-------------|-------------------|
-| HRS-01 | The ESP32 measures the number of claps using a microphone and sends the recognized count to the microcontroller. Each number triggers a physical action such as sit, walk, or prone. | Confirmed. Video evidence are stored in the `validation` folder. |
-| HRS-02 | Four servo motors are used to perform limb movements. The servos receive PWM control signals from the microcontroller and operate smoothly with a positional accuracy of ±2°. | Pending |
-| HRS-03 | An ultrasonic sensor measures the distance to obstacles in front of the robot. If an object is detected within 20 cm, the system stops motion and activates the buzzer. | Pending |
-| HRS-04 | The ESP32 provides IoT connectivity through the Blynk platform, enabling remote basic control via a mobile application. | Pending |
-| HRS-05 | The LCD display shows expressive facial emotions corresponding to the robot’s current action, providing visual feedback to the user. | Pending |
-| HRS-06 | An IMU sensor measures 3-axis acceleration and communicates with the microcontroller via I2C, providing data for emergency stop logic. | Pending |
+| HRS-01 | The ESP32 measures the number of claps using a microphone and sends the recognized count to the microcontroller. Each number triggers a physical action such as sit, walk, or prone. | Confirmed via live testing and [video evidence](https://drive.google.com/file/d/14UPAd-8kFQAw4NirMjw4hy5HUUOzlmQn/view?usp=share_link). |
+| HRS-02 | Four servo motors are used to perform limb movements. The servos receive PWM control signals from the microcontroller and operate smoothly with a positional accuracy of ±2°. | Confirmed via live testing and [video evidence](https://drive.google.com/file/d/14UPAd-8kFQAw4NirMjw4hy5HUUOzlmQn/view?usp=share_link). |
+| HRS-03 | An ultrasonic sensor measures the distance to obstacles in front of the robot. If an object is detected within 20 cm, the system stops motion and activates the buzzer. | Confirmed via live testing and [video evidence](https://drive.google.com/file/d/1dD9kHc6z8SWlcGxx0egVHsm26H7kbpge/view?usp=share_link). |
+| HRS-04 | The ESP32 provides IoT connectivity through the Blynk platform, enabling remote basic control via a mobile application. | Confirmed via live testing and [video evidence](https://drive.google.com/file/d/1LEdqjWzvrj9qv65okmgKJJLJmY1vXym9/view?usp=share_link) |
+| HRS-05 | The LCD display shows expressive facial emotions corresponding to the robot’s current action, providing visual feedback to the user. | Confirmed via live testing and [video evidence](https://drive.google.com/file/d/1LEdqjWzvrj9qv65okmgKJJLJmY1vXym9/view?usp=share_link) |
+| HRS-06 | An IMU sensor measures 3-axis acceleration and communicates with the microcontroller via I2C, providing data for emergency stop logic. | Confirmed via [video evidence](https://drive.google.com/file/d/1asGX6gRP8TG-OgkCPrwq0DiNiOpHG6Pe/view?usp=share_link) and serial output. |
 
 ### 5. Conclusion
-
-Reflect on your project. Some questions to address:
-
-* What did you learn from it?
-* What went well?
-* What accomplishments are you proud of?
-* What did you learn/gain from this experience?
-* Did you have to change your approach?
-* What could have been done differently?
-* Did you encounter obstacles that you didn’t anticipate?
-* What could be a next step for this project?
 
 <div style="border:1px solid #ddd; border-radius:10px; padding:20px; margin-bottom:20px; background:#fafafa;">
   <h3>Yubin</h3>
