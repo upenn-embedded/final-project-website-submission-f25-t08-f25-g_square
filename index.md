@@ -62,7 +62,9 @@ title: e-Puppy — Your Everyday Companion
 ### 3. System Block Diagram
 
 ### 4. Results
-
+Since suitable speech-recognition libraries were unavailable and the ESP32 did not have enough memory for audio processing, we replaced word control with a clap detection module. The microphone listens for claps, identifies the pattern, and sends the corresponding motion(stand, prone, forward and backward) to the ATmega328PB.  
+The dog also uses an ultrasonic sensor to detect nearby obstacles; if something is closer than 20 cm, the robot stops and activates a warning buzzer. An LCD display updates every second to show facial expressions that represent the dog's current action, such as walking and sitting.  
+The ESP32 provides remote-control capability by sending system commands to the Blynk IoT platform. In addition, the IMU continuously measures acceleration, and if it detects movement beyond a safe threshold, the system triggers an emergency stop.  
 #### 4.1 Software Requirements Specification (SRS) Results
 
 | ID     | Description | Validation Outcome |
@@ -71,7 +73,7 @@ title: e-Puppy — Your Everyday Companion
 | SRS-02 | The ultrasonic sensor measures the distance every 1 s. If an obstacle is detected within 20 cm, the robot stops movement and triggers the buzzer to emit a warning signal. | Confirmed via live testing and [video evidence](https://drive.google.com/file/d/1dD9kHc6z8SWlcGxx0egVHsm26H7kbpge/view?usp=share_link). |
 | SRS-03 | The LCD display updates every second to show facial emotions corresponding to the robot’s current action (e.g., sit, walk, stop). | Confirmed via live testing and [video evidence]([https://drive.google.com/file/d/14UPAd-8kFQAw4NirMjw4hy5HUUOzlmQn/view?usp=share_link](https://drive.google.com/file/d/1LQzFO7CN_q8gTajt9GSfTH_k3eMAXigI/view?usp=share_link)). |
 | SRS-04 | The ESP32 transmits system command to the Blynk IoT platform for remote control. | Confirmed via live testing and [video evidence](https://drive.google.com/file/d/1LEdqjWzvrj9qv65okmgKJJLJmY1vXym9/view?usp=share_link) |
-| SRS-05 | The IMU continuously measures 3-axis acceleration and sends data to the ATmega328PB via I2C. An emergency stop is triggered if the warning threshold is exceeded. | Confirmed via [video evidence](https://drive.google.com/file/d/1asGX6gRP8TG-OgkCPrwq0DiNiOpHG6Pe/view?usp=share_link) and serial output. |
+| SRS-05 | The IMU continuously measures 3-axis acceleration and sends data to the ATmega328PB via I2C. An emergency stop is triggered if the warning threshold is exceeded. | Confirmed via [video evidence](https://drive.google.com/file/d/1asGX6gRP8TG-OgkCPrwq0DiNiOpHG6Pe/view?usp=share_link) and [serial output](https://github.com/upenn-embedded/final-project-website-submission-f25-t08-f25-g_square/blob/main/imutest.jpg). |
 
 #### 4.2 Hardware Requirements Specification (HRS) Results
 
@@ -82,7 +84,7 @@ title: e-Puppy — Your Everyday Companion
 | HRS-03 | An ultrasonic sensor measures the distance to obstacles in front of the robot. If an object is detected within 20 cm, the system stops motion and activates the buzzer. | Confirmed via live testing and [video evidence](https://drive.google.com/file/d/1dD9kHc6z8SWlcGxx0egVHsm26H7kbpge/view?usp=share_link). |
 | HRS-04 | The ESP32 provides IoT connectivity through the Blynk platform, enabling remote basic control via a mobile application. | Confirmed via live testing and [video evidence](https://drive.google.com/file/d/1LEdqjWzvrj9qv65okmgKJJLJmY1vXym9/view?usp=share_link) |
 | HRS-05 | The LCD display shows expressive facial emotions corresponding to the robot’s current action, providing visual feedback to the user. | Confirmed via live testing and [video evidence](https://drive.google.com/file/d/1LEdqjWzvrj9qv65okmgKJJLJmY1vXym9/view?usp=share_link) |
-| HRS-06 | An IMU sensor measures 3-axis acceleration and communicates with the microcontroller via I2C, providing data for emergency stop logic. | Confirmed via [video evidence](https://drive.google.com/file/d/1asGX6gRP8TG-OgkCPrwq0DiNiOpHG6Pe/view?usp=share_link) and serial output. |
+| HRS-06 | An IMU sensor measures 3-axis acceleration and communicates with the microcontroller via I2C, providing data for emergency stop logic. | Confirmed via [video evidence](https://drive.google.com/file/d/1asGX6gRP8TG-OgkCPrwq0DiNiOpHG6Pe/view?usp=share_link) and [serial output](https://github.com/upenn-embedded/final-project-website-submission-f25-t08-f25-g_square/blob/main/imutest.jpg). |
 
 ### 5. Conclusion
 
