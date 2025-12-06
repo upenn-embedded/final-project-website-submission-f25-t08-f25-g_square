@@ -53,10 +53,10 @@ Validate at least two requirements, showing how you tested and your proof of wor
 
 | ID     | Description | Validation Outcome |
 |--------|-------------|-------------------|
-| SRS-01 | The microphone module will continuously listen for claps and identify the number, then send recognized data to the ATmega328PB. The command will be verified against the stored command set and corresponding actions will be triggered immediately. | Confirmed. Logged MCU output is saved in the `validation` folder of the GitHub repository. |
+| SRS-01 | The microphone module will continuously listen for claps and identify the number, then send recognized data to the ATmega328PB. The command will be verified against the stored command set and corresponding actions will be triggered immediately. | Confirmed. |
 | SRS-02 | The ultrasonic sensor measures the distance every 1 s. If an obstacle is detected within 20 cm, the robot stops movement and triggers the buzzer to emit a warning signal. | Confirmed via live testing and video evidence. |
 | SRS-03 | The LCD display updates every second to show facial emotions corresponding to the robot’s current action (e.g., sit, walk, stop). | Confirmed through visual inspection and recorded images. |
-| SRS-04 | The ESP32 transmits system command to the Blynk IoT platform for remote monitoring and control. | Confirmed via Blynk dashboard screenshots. |
+| SRS-04 | The ESP32 transmits system command to the Blynk IoT platform for remote control. | Confirmed via Blynk dashboard screenshots. |
 | SRS-05 | The IMU continuously measures 3-axis acceleration and sends data to the ATmega328PB via I2C. An emergency stop is triggered if the warning threshold is exceeded. | Confirmed through induced tilt tests and logged IMU values. |
 
 #### 4.2 Hardware Requirements Specification (HRS) Results
@@ -65,16 +65,18 @@ Validate at least two requirements, showing how you tested and your proof of wor
 
 *Did your requirements change? If so, why? Failing to meet a requirement is acceptable; understanding the reason why is critical!*
 
-*Validate at least two requirements, showing how you tested and your proof of work (videos, images, logic analyzer/oscilloscope captures, etc.).*
+*Validate at least two requirements, showing how you tested and your proof of work
+(videos, images, logic analyzer/oscilloscope captures, etc.).*
 
 | ID     | Description | Validation Outcome |
 |--------|-------------|-------------------|
-| HRS-01 | The ESP32 would measure the number of the claps through a microphone and send data to the microcontroller. Recognized numbers shall trigger corresponding physical actions such as "sit", "walk" and "stop" | Confirmed, sensed obstacles up to 15cm. Video in "validation" folder, shows tape measure and logged output to terminal. |
-| HRS-02 | Four servo motors shall be used to perform limb movements. The servos shall receive PWM control signals from the microcontroller and operate smoothly with position accuracy within ±2°. |pending|
-| HRS-03 | An ultrasonic sensor shall measure the distance to obstacles in front of the robot. If an object is detected within 15 cm, the system shall stop motion and activate the buzzer and LED indicators for warning.|pending|
-| HRS-04 | An ESP32 module shall provide IoT connectivity through the Blynk platform, allowing remote monitoring and simple control via a mobile application.|pending|
-| HRS-05 | A LCD display shall show expressive facial animations corresponding to the current action, providing visual feedback to the user.|pending|
-| HRS-06 | An IMU sensor shall be integrated to measure 3-axis acceleration. This module shall communicate with the microcontroller via the I2C bus and must be capable of providing raw data to support real-time motion stabilization.|pending|
+| HRS-01 | The ESP32 measures the number of claps using a microphone and sends the recognized count to the microcontroller. Each number triggers a physical action such as sit, walk, or prone. | Confirmed. Video evidence are stored in the `validation` folder. |
+| HRS-02 | Four servo motors are used to perform limb movements. The servos receive PWM control signals from the microcontroller and operate smoothly with a positional accuracy of ±2°. | Pending |
+| HRS-03 | An ultrasonic sensor measures the distance to obstacles in front of the robot. If an object is detected within 20 cm, the system stops motion and activates the buzzer and LED indicators. | Pending |
+| HRS-04 | The ESP32 provides IoT connectivity through the Blynk platform, enabling remote monitoring and basic control via a mobile application. | Pending |
+| HRS-05 | The LCD display shows expressive facial animations corresponding to the robot’s current action, providing visual feedback to the user. | Pending |
+| HRS-06 | An IMU sensor measures 3-axis acceleration and communicates with the microcontroller via I2C, providing data for motion stabilization and emergency stop logic. | Pending |
+
 ### 5. Conclusion
 
 Reflect on your project. Some questions to address:
