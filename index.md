@@ -31,9 +31,32 @@ title: e-Puppy — Your Everyday Companion
 
 ### 2. Images
 
-[Insert final project images here]
+## 📸 Project Images
 
-*Include photos of your device from a few angles. If you have a casework, show both the exterior and interior (where the good EE bits are!).*
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 16px;">
+
+  <a href="whole.jpg" target="_blank">
+    <img src="whole.jpg" alt="Full View" style="width:100%; border-radius:8px;">
+  </a>
+
+  <a href="front_view.jpg" target="_blank">
+    <img src="front_view.jpg" alt="Front View" style="width:100%; border-radius:8px;">
+  </a>
+
+  <a href="side_view.jpg" target="_blank">
+    <img src="side_view.jpg" alt="Side View" style="width:100%; border-radius:8px;">
+  </a>
+
+  <a href="back_view.jpg" target="_blank">
+    <img src="back_view.jpg" alt="Back View" style="width:100%; border-radius:8px;">
+  </a>
+
+  <a href="interior.jpg" target="_blank">
+    <img src="interior.jpg" alt="Interior View" style="width:100%; border-radius:8px;">
+  </a>
+
+</div>
+
 
 
 ### 3. System Block Diagram
