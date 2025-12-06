@@ -1,3 +1,9 @@
+<div style="display:flex; justify-content:center; margin: 24px 0;">
+  <img src="https://upenn-embedded.github.io/final-project-website-submission-f25-t08-f25-g_square/epuppy_400x400.png"
+       alt="e-Puppy"
+       style="width:400px; height:400px; object-fit:cover; border-radius:16px;">
+</div>
+
 ---
 layout: default
 title: e-Puppy — Your Everyday Companion
