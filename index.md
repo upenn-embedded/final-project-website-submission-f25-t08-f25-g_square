@@ -1,7 +1,3 @@
-theme: jekyll-theme-minimal
-title: e-Puppy Project — Team G Square
-description: Final project website for the e-Puppy smart companion robot, created by Team G Square.
-
 ## Final Project Report
 
 
