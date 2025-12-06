@@ -3,10 +3,17 @@ layout: default
 title: e-Puppy — Your Everyday Companion
 ---
 
-# e-Puppy — Your Everyday Companion
-### Developed by Team G Square
-
-A smart robotic puppy with sensing, motion, and interactive features.
+<div style="text-align:center; margin-top:60px; margin-bottom:40px;">
+  <h1 style="font-size:3rem; font-weight:600; letter-spacing:1.5px; margin-bottom:10px;">
+    e-Puppy
+  </h1>
+  <div style="font-size:1.4rem; font-weight:300; color:#555;">
+    Your Everyday Companion
+  </div>
+  <div style="margin-top:12px; font-size:1rem; color:#777;">
+    Developed by <strong>Team G Square</strong>
+  </div>
+</div>
 
 ---
 

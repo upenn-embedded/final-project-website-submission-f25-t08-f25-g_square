@@ -14,7 +14,7 @@
 
 **GitHub Repository URL:https://github.com/upenn-embedded/final-project-website-submission-f25-t08-f25-g_square.git**
 
-**GitHub Pages Website URL:** [for final submission]*
+**GitHub Pages Website URL:https://upenn-embedded.github.io/final-project-website-submission-f25-t08-f25-g_square/** 
 
 ## Final Project Proposal
 
