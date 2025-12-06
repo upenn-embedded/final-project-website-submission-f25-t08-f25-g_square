@@ -20,14 +20,15 @@ title: e-Puppy — Your Everyday Companion
 ## Final Project Report
 
 
-### 1. Video
+### 1. 🎥 Video
 
-[Insert final project video here]
-
-* The video must demonstrate your key functionality.
-* The video must be 5 minutes or less.
-* Ensure your video link is accessible to the teaching team. Unlisted YouTube videos or Google Drive uploads with SEAS account access work well.
-* Points will be removed if the audio quality is poor - say, if you filmed your video in a noisy electrical engineering lab.
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius: 10px;">
+  <iframe 
+    src="https://drive.google.com/file/d/1ecHt0VyD5tAkqrYCpK-P9USukw_RQf4E/preview"
+    style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none;"
+    allow="autoplay; fullscreen">
+  </iframe>
+</div>
 
 ### 2. 📸 Images
 
