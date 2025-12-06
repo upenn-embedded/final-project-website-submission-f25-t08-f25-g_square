@@ -1,5 +1,16 @@
-## Final Project Report
+---
+layout: default
+title: e-Puppy — Your Everyday Companion
+---
 
+# e-Puppy — Your Everyday Companion
+### Developed by Team G Square
+
+A smart robotic puppy with sensing, motion, and interactive features.
+
+---
+
+## Final Project Report
 
 
 ### 1. Video
