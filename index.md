@@ -102,14 +102,23 @@ Reflect on your project. Some questions to address:
 <div style="border:1px solid #ddd; border-radius:10px; padding:20px; margin-bottom:20px; background:#fafafa;">
   <h3>Haoliang</h3>
   <p>
-    [Haoliang’s reflection goes here.]
+    I learned how to use a mircophone to detect the voice information using I2S protocol, and leverage it to 
+    control the LCD and servo motors. Also, I have known better about the bare metal program. It is kind of overwhelmed 
+    when we use it to tackle a lot of tasks. So next time I may use RTOS instead of bare metal. For me, the ultra sonic
+    and the LCD works well. I am proud of the voice control, which recognizes the number of claps as orders and the cooperation
+    of the four servo motors. I think the walking motion could have been done differently since we could produce another PWM to 
+    drive the motors or stick something to the legs to enhance the friction if we have one more day. One obstacle is that it was 
+    harder than we thought to use "words" to control the dog. After we tried two ways, we gave it up and chose the claps. But on 
+    the Demo day I saw another team had sucessfully implemented the function. I asked them and they told me that they used a 
+    voice module which they found in Dektin. So next time we should explore the Detkin carefully. For the next step, I think 
+    we can try a different PWM to drive the motors to see if the legs can sucessfully move the body, or enhancing some friction.
   </p>
 </div>
 
 <div style="border:1px solid #ddd; border-radius:10px; padding:20px; margin-bottom:20px; background:#fafafa;">
   <h3>Shengge</h3>
   <p>
-    [Shengge’s reflection goes here.]
+    From this final program, I have learned much more about the I2C and I2S protocols and gained a comprehensive understanding of how to integrate different modules of code. I was responsible for 3D printing, ESP32 modeling, and the PWM generator. I also learned more about servo motors and how to use Arduino for voice recognition.At the beginning, we planned to use the ATmega328PB for voice recognition through the ADC. However, after integrating the code, we found a significant delay, which prevented us from achieving our goals. Therefore, we decided to use a microphone connected to the ESP32 and performed voice recognition on the ESP32 instead. This greatly reduced the delay in the overall system.One of the challenges we encountered was measuring the size of the servo motors because no dimensional information was provided in the datasheet. As a result, the hole size in our 3D-printed model did not match the servo motor dimensions. We had to use tape to wrap the motor to ensure it remained stable. In the next step, we could design and 3D-print a more realistic leg for our robot dog. We could also create a more suitable frame to eliminate the need for tape and improve overall stability.
   </p>
 </div>
 
