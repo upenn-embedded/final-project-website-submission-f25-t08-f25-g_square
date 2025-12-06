@@ -73,12 +73,40 @@ Reflect on your project. Some questions to address:
 * Did you encounter obstacles that you didn’t anticipate?
 * What could be a next step for this project?
 
-Yubin:
-From the final project, I learned about how to progamme for a communication protocol. I am responsible for programming for the IMU and integrating all the modules. Finally all functions works well. However there are really some challenges between the integration. At first, we tried to use a microphone connected with the ADC pin of ATmega. It can run normally when we do the test solely. But once we add the ultrasonic sensor, IMU and buzzer, the whole project cannot work. We discuss the problem with TA and decided change the method. We used I2S circuit connected with ESP32. Since ESP32 already has the I2S driver library, it was not tough for us to achieve. After changing the method, the integration still not work. We found that it was mainly because the delay function in our main file. Therefore we chose to use Timer for counting time, which was effective in the end. In the future, we will revised the motion, achieving smooth walking motion. And also I want to try the voice recognition control again, using words to control it, which is our initial goal, but difficult to achieve in a short time.
+<h2>5. Conclusion</h2>
 
-Haoliang:
+<div style="border:1px solid #ddd; border-radius:10px; padding:20px; margin-bottom:20px; background:#fafafa;">
+  <h3>Yubin</h3>
+  <p>
+    From the final project, I learned how to program communication protocols and integrate
+    multiple modules. I was responsible for IMU programming and system integration.
+    While individual modules worked well, integration introduced challenges.
+  </p>
+  <p>
+    Initially, we used an ADC-based microphone on the ATmega, which worked in isolation
+    but failed once the ultrasonic sensor, IMU, and buzzer were added.
+    After consulting with the TA, we switched to an I2S-based solution using ESP32.
+    We later identified blocking delays as the main issue and resolved it using timers.
+  </p>
+  <p>
+    In the future, we plan to improve motion smoothness and revisit voice-recognition
+    control using spoken commands.
+  </p>
+</div>
 
-Shengge:
+<div style="border:1px solid #ddd; border-radius:10px; padding:20px; margin-bottom:20px; background:#fafafa;">
+  <h3>Haoliang</h3>
+  <p>
+    [Haoliang’s reflection goes here.]
+  </p>
+</div>
+
+<div style="border:1px solid #ddd; border-radius:10px; padding:20px; margin-bottom:20px; background:#fafafa;">
+  <h3>Shengge</h3>
+  <p>
+    [Shengge’s reflection goes here.]
+  </p>
+</div>
 
 ## References
 
