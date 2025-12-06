@@ -72,10 +72,10 @@ Validate at least two requirements, showing how you tested and your proof of wor
 |--------|-------------|-------------------|
 | HRS-01 | The ESP32 measures the number of claps using a microphone and sends the recognized count to the microcontroller. Each number triggers a physical action such as sit, walk, or prone. | Confirmed. Video evidence are stored in the `validation` folder. |
 | HRS-02 | Four servo motors are used to perform limb movements. The servos receive PWM control signals from the microcontroller and operate smoothly with a positional accuracy of ±2°. | Pending |
-| HRS-03 | An ultrasonic sensor measures the distance to obstacles in front of the robot. If an object is detected within 20 cm, the system stops motion and activates the buzzer and LED indicators. | Pending |
-| HRS-04 | The ESP32 provides IoT connectivity through the Blynk platform, enabling remote monitoring and basic control via a mobile application. | Pending |
-| HRS-05 | The LCD display shows expressive facial animations corresponding to the robot’s current action, providing visual feedback to the user. | Pending |
-| HRS-06 | An IMU sensor measures 3-axis acceleration and communicates with the microcontroller via I2C, providing data for motion stabilization and emergency stop logic. | Pending |
+| HRS-03 | An ultrasonic sensor measures the distance to obstacles in front of the robot. If an object is detected within 20 cm, the system stops motion and activates the buzzer. | Pending |
+| HRS-04 | The ESP32 provides IoT connectivity through the Blynk platform, enabling remote basic control via a mobile application. | Pending |
+| HRS-05 | The LCD display shows expressive facial emotions corresponding to the robot’s current action, providing visual feedback to the user. | Pending |
+| HRS-06 | An IMU sensor measures 3-axis acceleration and communicates with the microcontroller via I2C, providing data for emergency stop logic. | Pending |
 
 ### 5. Conclusion
 
@@ -133,5 +133,5 @@ Reflect on your project. Some questions to address:
 </div>
 
 ## References
-UART library
+UART library  
 LCD library (Lab 4 Pong).
