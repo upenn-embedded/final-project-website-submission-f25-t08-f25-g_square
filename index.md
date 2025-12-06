@@ -48,15 +48,17 @@ title: e-Puppy — Your Everyday Companion
 
 *Did your requirements change? If so, why? Failing to meet a requirement is acceptable; understanding the reason why is critical!*
 
-*Validate at least two requirements, showing how you tested and your proof of work (videos, images, logic analyzer/oscilloscope captures, etc.).*
 
-| ID     | Description                                                                                               | Validation Outcome                                                                          |
-| ------ | --------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------- |
-| SRS-01 | The mirophone module will continuously listen for the claps and identify the numvber, then send recognized data to the ATmega328PB . The command will be verified against the stored command set, and corresponding actions will be triggered immediately. | Confirmed, logged output from the MCU is saved to "validation" folder in GitHub repository. |
-| SRS-02 | The ultrasonic sensor will measure the distance in front of the robot every 1s and send the data to the ATmega328PB. If an obstacle is detected within 20 cm, the robot will automatically stop movement and trigger the buzzle to emit a warningsignal.|Pending |
-| SRS-03 | The LCD display will update every second to show an expressive facial animation corresponding to the robot’s current action. Each motion command (such as "sit", "walk" and "stop") will trigger a unique facial expression, allowing the robot to visually convey its behavior and enhance user interaction.|pending|
-| SRS-04 | The ESP32 module will transmit system telemetry (command, motion state and obstacle data) to the Blynk IoT platform, allowing remote monitoring and basic control through the mobile app.| pending|
-| SRS-05 | The IMU module shall continuously measure and fuse 3-axis acceleration, which must be sent to the ATmega328PB through I2C for motion stabilization. If either angle exceeds the warning number, an immediate Emergency Stop command will be triggered.|pending|
+Validate at least two requirements, showing how you tested and your proof of work (videos, images, logic analyzer/oscilloscope captures, etc.).
+
+| ID     | Description | Validation Outcome |
+|--------|-------------|-------------------|
+| SRS-01 | The microphone module will continuously listen for claps and identify the number, then send recognized data to the ATmega328PB. The command will be verified against the stored command set and corresponding actions will be triggered immediately. | Confirmed. Logged MCU output is saved in the `validation` folder of the GitHub repository. |
+| SRS-02 | The ultrasonic sensor measures the distance every 1 s. If an obstacle is detected within 20 cm, the robot stops movement and triggers the buzzer to emit a warning signal. | Confirmed via live testing and video evidence. |
+| SRS-03 | The LCD display updates every second to show facial animations corresponding to the robot’s current action (e.g., sit, walk, stop). | Confirmed through visual inspection and recorded images. |
+| SRS-04 | The ESP32 transmits system telemetry (command) to the Blynk IoT platform for remote monitoring and control. | Confirmed via Blynk dashboard screenshots. |
+| SRS-05 | The IMU continuously measures 3-axis acceleration and sends data to the ATmega328PB via I2C. An emergency stop is triggered if the warning threshold is exceeded. | Confirmed through induced tilt tests and logged IMU values. |
+
 #### 4.2 Hardware Requirements Specification (HRS) Results
 
 *Based on your quantified system performance, comment on how you achieved or fell short of your expected requirements.*
