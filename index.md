@@ -65,7 +65,7 @@ title: e-Puppy — Your Everyday Companion
 
 
 
-### 3. System Block Diagram
+### 3. 🎨 System Block Diagram
 <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(220px,1fr)); gap:16px;">
 
   <a href="https://upenn-embedded.github.io/final-project-website-submission-f25-t08-f25-g_square/newblockdiagram.jpg" target="_blank">
@@ -75,7 +75,7 @@ title: e-Puppy — Your Everyday Companion
 
 </div>
 
-### 4. Results
+### 4. 🤔 Results
 Since suitable speech-recognition libraries were unavailable and the ESP32 did not have enough memory for audio processing, we replaced word control with a clap detection module. The microphone listens for claps, identifies the pattern, and sends the corresponding motion(stand, prone, forward and backward) to the ATmega328PB.  
 The dog also uses an ultrasonic sensor to detect nearby obstacles; if something is closer than 20 cm, the robot stops and activates a warning buzzer. An LCD display updates every second to show facial expressions that represent the dog's current action, such as walking and sitting.  
 The ESP32 provides remote-control capability by sending system commands to the Blynk IoT platform. In addition, the IMU continuously measures acceleration, and if it detects movement beyond a safe threshold, the system triggers an emergency stop.  
@@ -100,7 +100,7 @@ The ESP32 provides remote-control capability by sending system commands to the B
 | HRS-05 | The LCD display shall show expressive facial emotions corresponding to the robot’s current action, providing visual feedback to the user. | Confirmed via live testing and [video evidence](https://drive.google.com/file/d/1LEdqjWzvrj9qv65okmgKJJLJmY1vXym9/view?usp=share_link) |
 | HRS-06 | An IMU sensor shall measure 3-axis acceleration and communicates with the microcontroller via I2C, providing data for emergency stop logic. | Confirmed via [video evidence](https://drive.google.com/file/d/1asGX6gRP8TG-OgkCPrwq0DiNiOpHG6Pe/view?usp=share_link) and [serial output](https://github.com/upenn-embedded/final-project-website-submission-f25-t08-f25-g_square/blob/main/imutest.jpg). |
 
-### 5. Conclusion
+### 5. ✍️ Conclusion
 
 <div style="border:1px solid #ddd; border-radius:10px; padding:20px; margin-bottom:20px; background:#fafafa;">
   <h3>Yubin</h3>
