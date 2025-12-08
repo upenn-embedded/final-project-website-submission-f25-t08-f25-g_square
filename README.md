@@ -275,13 +275,7 @@ Here is our [slide](https://docs.google.com/presentation/d/1iUWWygRvbU7vrjxkWwl4
 
 ### 1. 🎥 Video
 
-<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius: 10px;">
-  <iframe 
-    src="https://drive.google.com/file/d/1ecHt0VyD5tAkqrYCpK-P9USukw_RQf4E/preview"
-    style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none;"
-    allow="autoplay; fullscreen">
-  </iframe>
-</div>
+[video_url](https://drive.google.com/file/d/1ecHt0VyD5tAkqrYCpK-P9USukw_RQf4E/preview)
 
 ### 2. 📸 Images
 
