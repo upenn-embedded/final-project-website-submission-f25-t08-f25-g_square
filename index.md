@@ -93,7 +93,7 @@ The ESP32 provides remote-control capability by sending system commands to the B
 
 | ID     | Description | Validation Outcome |
 |--------|-------------|-------------------|
-| HRS-01 | The ESP32 shall measure the number of claps using a microphone and send the recognized count to the microcontroller. Each number triggers a physical action such as sit, walk, or prone. | Confirmed via live testing and [video evidence](https://drive.google.com/file/d/1LQzFO7CN_q8gTajt9GSfTH_k3eMAXigI/view?usp=share_link). |
+| HRS-01 | The ESP32 shall measure the number of claps using a microphone and send the recognized count to the microcontroller. Each number triggers a physical action such as sit, walk, or prone. | Partially confirmed via live testing and [video evidence](https://drive.google.com/file/d/1LQzFO7CN_q8gTajt9GSfTH_k3eMAXigI/view?usp=share_link). Clap recognition and command triggering were validated, but the walking motion was limited by mechanical design and low friction between foot and ground.|
 | HRS-02 | Four servo motors shall be used to perform limb movements. The servos receive PWM control signals from the microcontroller and operate smoothly with a positional accuracy of ±2°. | Confirmed via live testing and [video evidence](https://drive.google.com/file/d/1LQzFO7CN_q8gTajt9GSfTH_k3eMAXigI/view?usp=share_link). |
 | HRS-03 | An ultrasonic sensor shall measure the distance to obstacles in front of the robot. If an object is detected within 20 cm, the system stops motion and activates the buzzer. | Confirmed via live testing and [video evidence](https://drive.google.com/file/d/1dD9kHc6z8SWlcGxx0egVHsm26H7kbpge/view?usp=share_link). |
 | HRS-04 | The ESP32 shall provide IoT connectivity through the Blynk platform, enabling remote basic control via a mobile application. | Confirmed via live testing and [video evidence](https://drive.google.com/file/d/1LEdqjWzvrj9qv65okmgKJJLJmY1vXym9/view?usp=share_link) |
@@ -105,7 +105,7 @@ The ESP32 provides remote-control capability by sending system commands to the B
 <div style="border:1px solid #ddd; border-radius:10px; padding:20px; margin-bottom:20px; background:#fafafa;">
   <h3>Yubin</h3>
   <p>
-    From the final project, I learned how to program communication protocols and integrate
+    From the final project, I learned how to programme communication protocols and integrate
     multiple modules. I was responsible for IMU programming and system integration.
     While individual modules worked well, integration introduced challenges.
   </p>
