@@ -65,7 +65,7 @@ void buzzer_enable(){
 //        _delay_us(50);
 //    }
 //    PORTC &= ~(1 << PC3);
-    buzzer_duration_ms = 500; // 例如：鸣叫 500ms
+    buzzer_duration_ms = 500; //
 }
 /*************Ultra sonic & Buzzer *************/
 

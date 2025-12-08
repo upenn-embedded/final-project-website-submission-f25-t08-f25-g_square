@@ -9,7 +9,7 @@
 #include "imu.h"
 
 
-#define ACC_SCALE_G     0.000061f   // ±2g 模式, 0.061 mg/LSB = 0.000061 g/LSB
+#define ACC_SCALE_G     0.000061f   
 
 
 #define Z_UP_MIN_G      0.6f       
