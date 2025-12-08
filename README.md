@@ -328,8 +328,7 @@ The ESP32 provides remote-control capability by sending system commands to the B
 | SRS-02 | The ultrasonic sensor shall measure the distance every 1 s. If an obstacle is detected within 20 cm, the robot stops movement and triggers the buzzer to emit a warning signal. | Confirmed via live testing and [video evidence](https://drive.google.com/file/d/1dD9kHc6z8SWlcGxx0egVHsm26H7kbpge/view?usp=share_link). |
 | SRS-03 | The LCD display shall update every second to show facial emotions corresponding to the robot’s current action (e.g., sit, walk, stop). | Confirmed via live testing and [video evidence](https://drive.google.com/file/d/1LQzFO7CN_q8gTajt9GSfTH_k3eMAXigI/view?usp=share_link). |
 | SRS-04 | The ESP32 shall transmit system command to the Blynk IoT platform for remote control. | Confirmed via live testing and [video evidence](https://drive.google.com/file/d/1LEdqjWzvrj9qv65okmgKJJLJmY1vXym9/view?usp=share_link) |
-| SRS-05 | The IMU shall continuously measure 3-axis acceleration and send data to the ATmega328PB via I2C. When the acceleration exceeds a predefined threshold, 
-the system shall issue a email alert via the IoT platform. | Confirmed via [video evidence](https://drive.google.com/file/d/1asGX6gRP8TG-OgkCPrwq0DiNiOpHG6Pe/view?usp=share_link) and [serial output](https://github.com/upenn-embedded/final-project-website-submission-f25-t08-f25-g_square/blob/main/imutest.jpg). |
+| SRS-05 | The IMU shall continuously measure 3-axis acceleration and send data to the ATmega328PB via I2C. When the acceleration exceeds a predefined threshold, the system shall issue a email alert via the IoT platform. | Confirmed via [video evidence](https://drive.google.com/file/d/1asGX6gRP8TG-OgkCPrwq0DiNiOpHG6Pe/view?usp=share_link) and [serial output](https://github.com/upenn-embedded/final-project-website-submission-f25-t08-f25-g_square/blob/main/imutest.jpg). |
 
 #### 4.2 Hardware Requirements Specification (HRS) Results
 
